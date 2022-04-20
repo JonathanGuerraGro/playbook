@@ -1,9 +1,12 @@
-const Pokemon = require('./pokemon')
+import pokemon from './pokemon'
 
-const pikachu = new Pokemon("pikachu")
-const bulbasaur = new Pokemon("bulbasaur")
-const squirtle = new Pokemon("squirtle")
-const charmander = new Pokemon("charmander")
+
+const pokemon = require('./pokemon')
+
+const pikachu = new pokemon("pikachu")
+const bulbasaur = new pokemon("bulbasaur")
+const squirtle = new pokemon("squirtle")
+const charmander = new pokemon("charmander")
 
 pikachu.sayHello()
 pikachu.sayMessage("Heey!")
