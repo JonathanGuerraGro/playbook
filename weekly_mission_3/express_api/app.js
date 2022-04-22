@@ -27,14 +27,29 @@ app.get('/v1/explorers/:id', (req,res) =>{
     res.status(200).json(explorer1)
 })
 
-app.get('/v1/explorers', (req,res) =>{
+app.post('/v1/explorers', (req,res) =>{
     console.log(`POST Exploreres V1 API ${new Date()}`)
     // Agregar la logica para persistir
     console.log(req.body) // parametros del request
     res.status(201).json({message: "Creado exitosamente"})
 })
 
+app.put('/v1/explorers/:id', (req,res) =>{
+    console.log(`PUT Exploreres V1 API ${new Date()}`)
+   // Agregar la logica para actualizar
 
+   res.status(200).json({ message: "Actualizado exitosamente"})
+})
+
+app.delete('/v1/explorers/:id', (req,res) =>{
+    console.log(`DELETE Exploreres V1 API ${new Date()}`)
+   // Agregar la logica para eliminar el registro enviado
+
+   res.status(200).json({ message: "Se elimino existosamente"})
+})
+
+
+// Con esto inicialiamos la app
 app.listen(port, () => {
     console.log (`Example app listeting on port ${port}`)
 })
