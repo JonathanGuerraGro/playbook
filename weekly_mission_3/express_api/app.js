@@ -18,6 +18,18 @@ app.get('/v1/explorers', (req, res) => {
     res.status(200).json(explorers)
 })
 
+
+
+app.get('/v1/exploreres/:id', (req,res) =>{
+    console.log(`GET BY ID Exploreres V1 API ${new Date()}`)
+    const explorer1 = { id: 1, name: "Explorer1" }
+    // HTTP CODE STATUS:200
+    res.status(200).json(explorer1)
+})
+
+
+
+
 app.listen(port, () => {
     console.log (`Example app listeting on port ${port}`)
 })
