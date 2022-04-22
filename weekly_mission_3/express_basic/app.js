@@ -19,6 +19,11 @@ app.get('/node', (req, res) => {
     res.send([explorer1, explorer2, explorer3])
 })
 
+// localhost/explorers/JonathanGuerra
+app.get('/explorers/:explorer', (req, res) => {
+    console.log(req.params)// {explorer: "Jonathan"}
+    res.send(req.params)
+})
 
 app.listen(port, () =>{
     console.log("Server Listo!")
