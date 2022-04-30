@@ -66,3 +66,6 @@ const explorers = [
 
    const newStack = explorers.map((explorer)=>{return explorer.stack})
    console.log(newStack)
+
+   const filter = explorers.filter((explorer)=>{return explorer.stack.includes("js")})
+   console.log(filter)
