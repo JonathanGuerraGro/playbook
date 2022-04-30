@@ -69,3 +69,6 @@ const explorers = [
 
    const filter = explorers.filter((explorer)=>{return explorer.stack.includes("js")})
    console.log(filter)
+
+   const ciudad = explorers.find((element) => {return element.city == "CDMX"})
+   console.log(ciudad)
