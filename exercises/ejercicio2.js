@@ -61,3 +61,4 @@ const explorers = [
 
 
    explorers.forEach(explorers => console.log(explorers.name))
+   explorers.forEach(explorers => console.log(explorers.stack))
