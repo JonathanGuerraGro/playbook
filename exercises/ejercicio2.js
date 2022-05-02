@@ -78,3 +78,6 @@ const explorers = [
 
    const frontEndTrue = explorers.some((element) => {return element.missions.frontend.exercisesFinished === true})
    console.log(frontEndTrue)
+
+   const validacionOnboarding = explorers.every((element) => {return element.missions.onboarding == true})
+   console.log(validacionOnboarding)
