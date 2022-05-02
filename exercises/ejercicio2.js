@@ -72,3 +72,9 @@ const explorers = [
 
    const ciudad = explorers.find((element) => {return element.city == "CDMX"})
    console.log(ciudad)
+
+   const suma = explorers.reduce( function (acc, element) {return acc + element.exercises_completed},0)
+   console.log(suma)
+
+   const frontEndTrue = explorers.some((element) => {return element.missions.frontend.exercisesFinished === true})
+   console.log(frontEndTrue)
