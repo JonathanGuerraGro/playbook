@@ -1,5 +1,5 @@
-describe("Test Suite Dummy Description", () => {
-    test('Case 1 Dummy', () => {
+describe("Unit Tests for Spiderman class", () => {
+    test('Create an spiderman object', () => {
 
        const andrewGarfield = new Spider ("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
 
