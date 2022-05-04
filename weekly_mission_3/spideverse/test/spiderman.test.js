@@ -1,7 +1,9 @@
+const Spiderman = require('./../app/spiderman')
+
 describe("Unit Tests for Spiderman class", () => {
     test('Create an spiderman object', () => {
 
-       const andrewGarfield = new Spider ("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
+       const andrewGarfield = new Spiderman ("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
 
        expect(andrewGarfield.name).toBe("Spiderman Sony")
        expect(andrewGarfield.age).toBe(31)
