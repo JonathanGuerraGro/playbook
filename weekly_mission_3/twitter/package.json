@@ -1,0 +1,11 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "proyecto twitter launch x",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Jonathan Guerra",
+  "license": "ISC"
+}
