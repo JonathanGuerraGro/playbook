@@ -4,8 +4,11 @@
   "description": "proyecto twitter launch x",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node ./node_modules/jest/bin/jest.js"
   },
   "author": "Jonathan Guerra",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
